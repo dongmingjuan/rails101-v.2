@@ -1,0 +1,16 @@
+<div class="col-md-12">
+  <table class="table table-bordered">
+    <thead>
+      <th>Title</th>
+      <th>Description</th>
+    </thead>
+    <tbody>
+      <% @groups.each do |group| %>
+        <tr>
+          <td><%= group.title %></td>
+          <td><%= group.description %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
